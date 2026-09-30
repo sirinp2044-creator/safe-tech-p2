@@ -1,0 +1,37 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Safe Tech ป.2 | ห้องเรียน</title><link rel="stylesheet" href="style.css"></head><body onload="guard();fillUser()">
+<div class="layout"><aside class="sidebar"><div class="brand"><div class="brand-icon">🛡️</div><div><strong>Safe Tech ป.2</strong><small>เรียนรู้อย่างปลอดภัย</small></div></div>
+<div class="nav-title">เมนูการเรียนรู้</div><nav class="nav">
+<a class="active" href="home.html"><span class="ico">🏠</span>หน้าหลัก</a><a href="#objectives"><span class="ico">🎯</span>จุดประสงค์</a>
+<a href="#chapters"><span class="ico">📚</span>4 บทเรียน</a><a href="#activities"><span class="ico">🎮</span>กิจกรรมระหว่างบท</a>
+<a href="#tests"><span class="ico">📝</span>แบบทดสอบ</a><a href="#manual"><span class="ico">📖</span>คู่มือการใช้งาน</a>
+</nav><div class="nav-title">บัญชีของฉัน</div><nav class="nav"><a href="javascript:logout()" class="teacher-link"><span class="ico">🚪</span>ออกจากระบบ</a></nav></aside>
+<main class="main"><div class="topbar"><button class="menu-btn" onclick="toggleNav()">☰</button><div style="font-size:13px;color:#64748b">ห้องเรียนออนไลน์ • การใช้เทคโนโลยีสารสนเทศอย่างปลอดภัย</div><div class="user-pill"><span class="user-avatar">👧</span><span data-student></span></div></div>
+<section class="hero"><div><span class="badge">🌟 สำหรับนักเรียนชั้นประถมศึกษาปีที่ 2</span><h1>เรียนรู้เทคโนโลยี<br><span style="color:#1677ff">อย่างปลอดภัย</span></h1>
+<p>เรียนรู้การรู้จักข้อมูลส่วนตัว การป้องกันอันตรายจากการเผยแพร่ข้อมูล การใช้อุปกรณ์อย่างถูกวิธี และการดูแลอุปกรณ์เทคโนโลยี ผ่านบทเรียน กิจกรรม และแบบทดสอบ</p>
+<div class="actions"><a class="btn primary" href="#chapters">📚 เริ่มเรียน</a><a class="btn soft" href="#tests">📝 ทำแบบทดสอบ</a></div></div><div class="hero-art">🧑‍💻<br>🛡️</div></section>
+<section id="objectives" class="section"><div class="section-head"><h2>🎯 จุดประสงค์การเรียนรู้</h2><p>เมื่อเรียนจบ นักเรียนจะสามารถ...</p></div>
+<div class="grid3"><div class="card obj k"><span class="tag">K • ความรู้</span><h3>รู้จักและจำแนกข้อมูลส่วนตัว</h3><p>บอกความหมาย ยกตัวอย่าง และแยกข้อมูลที่ควรระวังในการเปิดเผยได้</p></div>
+<div class="card obj p"><span class="tag">P • ทักษะ</span><h3>เลือกวิธีปฏิบัติที่ปลอดภัย</h3><p>ตัดสินใจจากสถานการณ์ง่าย ๆ และใช้อุปกรณ์เทคโนโลยีอย่างเหมาะสมได้</p></div>
+<div class="card obj a"><span class="tag">A • เจตคติ</span><h3>มีความรับผิดชอบ</h3><p>เห็นความสำคัญของการปกป้องข้อมูล ขอความช่วยเหลือเมื่อไม่ปลอดภัย และดูแลอุปกรณ์</p></div></div></section>
+<section id="chapters" class="section"><div class="section-head"><h2>📚 4 บทเรียน</h2><p>กด “เปิดบทเรียน” เพื่ออ่านเนื้อหาแบบละเอียด</p></div>
+<div class="grid4"><article class="card chapter c1"><div class="num">1</div><h3>รู้จักข้อมูลส่วนตัว</h3><p>ความหมาย ตัวอย่างข้อมูลส่วนตัว ข้อมูลที่ควรระวัง และกฎก่อนบอกข้อมูล</p><button class="btn soft" onclick="openLesson(1)">เปิดบทเรียน</button></article>
+<article class="card chapter c2"><div class="num">2</div><h3>อันตรายจากการเผยแพร่ข้อมูลส่วนตัว</h3><p>ความเสี่ยงจากการเปิดเผยข้อมูล สถานการณ์ที่ควรระวัง และการขอความช่วยเหลือ</p><button class="btn soft" onclick="openLesson(2)">เปิดบทเรียน</button></article>
+<article class="card chapter c3"><div class="num">3</div><h3>ข้อควรปฏิบัติในการใช้อุปกรณ์</h3><p>ใช้ตามคำแนะนำ จัดท่านั่ง พักสายตา และป้องกันอุบัติเหตุ</p><button class="btn soft" onclick="openLesson(3)">เปิดบทเรียน</button></article>
+<article class="card chapter c4"><div class="num">4</div><h3>การดูแลรักษาอุปกรณ์</h3><p>ทำความสะอาด ใช้อย่างทะนุถนอม จัดเก็บ และแจ้งผู้ใหญ่เมื่ออุปกรณ์ผิดปกติ</p><button class="btn soft" onclick="openLesson(4)">เปิดบทเรียน</button></article></div></section>
+<section id="activities" class="section"><div class="section-head"><h2>🎮 กิจกรรมระหว่างบท</h2><p>ฝึกคิดจากสถานการณ์ใกล้ตัว</p></div><div class="grid2">
+<div class="card activity"><div class="emoji">🔐</div><div><h3>กิจกรรม 1 • ข้อมูลของฉัน</h3><p>แยกแยะข้อมูลที่ควรเก็บเป็นความลับ</p><button class="btn soft" onclick="openActivity(1)">ทำกิจกรรม</button></div></div>
+<div class="card activity"><div class="emoji">⚠️</div><div><h3>กิจกรรม 2 • หยุดก่อนเผยแพร่</h3><p>เลือกวิธีรับมือเมื่อมีคนขอข้อมูลสำคัญ</p><button class="btn soft" onclick="openActivity(2)">ทำกิจกรรม</button></div></div>
+<div class="card activity"><div class="emoji">💻</div><div><h3>กิจกรรม 3 • ใช้อุปกรณ์ให้ถูกวิธี</h3><p>คิดหาวิธีป้องกันอุบัติเหตุจากอุปกรณ์</p><button class="btn soft" onclick="openActivity(3)">ทำกิจกรรม</button></div></div>
+<div class="card activity"><div class="emoji">🧹</div><div><h3>กิจกรรม 4 • ผู้พิทักษ์อุปกรณ์</h3><p>เลือกวิธีดูแลอุปกรณ์ให้ปลอดภัยและใช้งานได้นาน</p><button class="btn soft" onclick="openActivity(4)">ทำกิจกรรม</button></div></div></div></section>
+<section id="tests" class="section"><div class="section-head"><h2>📝 แบบทดสอบ</h2><p>ก่อนเรียน 10 ข้อ และหลังเรียน 10 ข้อ พร้อมบันทึกคะแนน</p></div><div class="grid2">
+<div class="card test-card"><h3>🧠 แบบทดสอบก่อนเรียน</h3><p>ทำก่อนเริ่มเรียน เพื่อดูความรู้เดิมของเรา</p><button class="btn primary" onclick="startQuiz('pre')">เริ่มก่อนเรียน</button></div>
+<div class="card test-card"><h3>🏆 แบบทดสอบหลังเรียน</h3><p>ทำหลังเรียนครบทั้ง 4 บท เพื่อทบทวนความเข้าใจ</p><button class="btn primary" onclick="startQuiz('post')">เริ่มหลังเรียน</button></div></div></section>
+<section id="manual" class="section"><div class="section-head"><h2>📖 คู่มือการใช้งาน</h2></div><div class="card"><ol style="line-height:2;color:#52627a"><li>กรอกชื่อ ชั้น/ห้อง และเลขที่ แล้วกด “เข้าสู่บทเรียน”</li><li>เริ่มจากจุดประสงค์ แล้วเรียนบทที่ 1–4 ตามลำดับหรือเลือกบทที่สนใจ</li><li>ทำกิจกรรมระหว่างบทเพื่อฝึกคิดจากสถานการณ์จริง</li><li>ทำแบบทดสอบก่อนเรียน 10 ข้อ และหลังเรียน 10 ข้อ</li><li>ระบบจะบันทึกผลคะแนนของนักเรียนในเบราว์เซอร์เครื่องนี้</li><li>หากพบสิ่งที่ไม่ปลอดภัยในการใช้เทคโนโลยี ให้หยุดและขอความช่วยเหลือจากครูหรือผู้ปกครอง</li></ol></div></section>
+<section class="section"><div class="section-head"><h2>📚 แหล่งอ้างอิง</h2></div><div class="grid2"><div class="card ref"><b>สสวท. ตัวชี้วัดและสาระการเรียนรู้แกนกลาง</b><br>เนื้อหา ป.2 เรื่องการใช้เทคโนโลยีสารสนเทศอย่างปลอดภัย การรู้จักข้อมูลส่วนตัว การดูแลอุปกรณ์ และการใช้งานอย่างเหมาะสม<br><a href="https://www.ipst.ac.th/wp-content/uploads/2022/05/SciCurriculum_2560.pdf" target="_blank">อ่านแหล่งอ้างอิง</a></div>
+<div class="card ref"><b>สสวท. Project 14</b><br>การใช้งานคอมพิวเตอร์อย่างปลอดภัยและการปกป้องข้อมูลส่วนตัว สำหรับหนังสือเรียนเทคโนโลยี ป.2<br><a href="https://proj14.ipst.ac.th/p2/p2-cs/cs-p2b1-003/" target="_blank">เปิด Project 14</a></div>
+<div class="card ref"><b>สสวท. การรักษาข้อมูลส่วนตัว</b><br>ตัวอย่างข้อมูลที่ควรระวังในการเปิดเผยสำหรับนักเรียน ป.2<br><a href="https://www.ipst.ac.th/knowledge/38127/20230220-pdpa.html" target="_blank">อ่านบทความ</a></div></div></section>
+<div class="footer">Safe Tech ป.2 • สื่อการเรียนรู้การใช้เทคโนโลยีสารสนเทศอย่างปลอดภัย</div>
+</main></div>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-box"><div id="modalContent"></div></div></div>
+<script src="app.js"></script></body></html>
